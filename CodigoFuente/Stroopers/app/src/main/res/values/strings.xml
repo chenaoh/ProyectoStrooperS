@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Stroopers</string>
+    <string name="title_activity_contenedor_instrucciones">ContenedorInstruccionesActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="texto_instruccion_final">Y listo, ahora puedes empezar a jugar, presiona iniciar y prueba tu retentiva!!!</string>
+    <string name="texto_instrucciones_informacion">Este juego hace parte de una secuencia de videos de youtube donde el creador te enseña paso a paso como construirlo, empezando desde el planteamiento del problema hasta su publicación y mantenimiento... ingresa a esta opción para conocer más!!!</string>
+    <string name="texto_instruccion_user">El nickName es fundamental si quieres probar tu retentiva, ya qué este nos permitirá saber qué usuario ha jugado y cual es su posición en el ranking, presiona esta opción si quieres ingresar un nuevo jugador...</string>
+    <string name="texto_instrucciones_instrucciones">¿Aún no te queda claro como funciona la aplicación? No te preocupes, desde aquí podrás regresar a consultar las instrucciones del juego...</string>
+    <string name="texto_instrucciones_ranking">Consulta el ranking de puntos obtenidos en cada partida, a medida que vayas jugando mejorarás tú puntaje...</string>
+    <string name="texto_instrucciones_ajustes">Ajusta el modo de juego, puedes definir jugar por tiempo, por palabras, o seleccionar el nivel inicial entre otros elementos de configuración...</string>
+    <string name="texto_instrucciones_play">Desde aquí podrás medir tu retentiva probando el test de Stroop, en el que deberás indicar si el nombre del color corresponde al color de la palabra...</string>
+    <string name="texto_instrucciones_introduccion">El efecto Stroop permite medir la interferencia en el tiempo de reacción de las personas cuando se presenta el nombre de un color escrito o pintado con un color que no corresponde al mismo...</string>
+    <string name="title_activity_ajustes_tema">AjustesTemaActivity</string>
+    <string name="info_acerca_de">Esta aplicación nace de codejavu.blogspot.com y hace parte de una secuencia de videos qué podrán encontrar en youtube donde se aplican algunos conceptos trabajados en la lista de reproducción del Curso Android desde Cero</string>
+</resources>

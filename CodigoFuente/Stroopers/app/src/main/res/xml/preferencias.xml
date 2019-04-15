@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="JUEGO">
+        <ListPreference
+            android:key="modoJuego"
+            android:title="Modo Juego"
+            android:summary="Elije la modalidad del Juego"
+            android:entries="@array/modo_juego"
+            android:icon="@mipmap/ic_modo"
+            android:entryValues="@array/modo_juego" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="PERSONALIZAR">
+
+        <ListPreference
+            android:key="tiempoJuego"
+            android:title="Duración Juego"
+            android:summary="Seleccione la cantidad de minutos qué durará el juego"
+            android:entries="@array/duracion_juego"
+            android:entryValues="@array/duracion_juego"
+            android:icon="@mipmap/ic_duracion" />
+
+    <ListPreference
+        android:key="duracionPalabra"
+        android:title="Duración Palabra"
+        android:summary="Digite la cantidad en milisegundos que una palabra es mostrada"
+        android:icon="@mipmap/ic_palabra"
+        android:entries="@array/duracion_palabra"
+        android:entryValues="@array/duracion_palabra" />
+
+        <EditTextPreference
+            android:key="NumeroDeIntentos"
+            android:summary="Digite la cantidad de intentos por Juego"
+            android:maxLength="5"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:icon="@mipmap/ic_intentos"
+            android:title="Número de Intentos" />
+
+        <PreferenceScreen
+            android:title="Cambiar Tema"
+            android:icon="@mipmap/ic_tema"
+            android:summary="Personaliza los colores y el diseño de la aplicación">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="co.chenao.stroopers"
+                android:targetClass="co.chenao.stroopers.actividades.AjustesTemaActivity"/>
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="INFORMACIÓN">
+        <PreferenceScreen
+            android:title="Acerca De..."
+            android:icon="@mipmap/ic_juego"
+            android:summary="Conoce más sobre el desarrollador">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="co.chenao.stroopers"
+                android:targetClass="co.chenao.stroopers.actividades.AcercaDeActivity"/>
+
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

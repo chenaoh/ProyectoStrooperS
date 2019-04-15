@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="modo_juego">
+        <item>INTENTOS</item>
+        <item>TIEMPO</item>
+    </array>
+
+    <array name="duracion_juego">
+        <item>1 Minuto</item>
+        <item>2 Minutos</item>
+        <item>3 Minutos</item>
+        <item>4 Minutos</item>
+        <item>5 Minutos</item>
+    </array>
+
+    <array name="duracion_palabra">
+        <item>1/2 Segundos</item>
+        <item>1 Segundo</item>
+        <item>2 Segundos</item>
+    </array>
+
+    <string-array name="tema">
+        <item>CIRCULAR</item>
+        <item>RECTANGULAR</item>
+    </string-array>
+
+    <string-array name="combo_resultados">
+        <item>Individual</item>
+        <item>Lista de Jugadores</item>
+    </string-array>
+
+    <string-array name="combo_nivel">
+        <item>Facil</item>
+        <item>Medio</item>
+    </string-array>
+
+</resources>

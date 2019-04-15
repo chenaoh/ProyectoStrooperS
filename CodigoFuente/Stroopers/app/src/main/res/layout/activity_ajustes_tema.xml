@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".actividades.AjustesTemaActivity">
+
+    <RelativeLayout
+        android:id="@+id/idLayoutFondo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:src="@drawable/logo_mini" />
+
+        <ImageButton
+            android:id="@+id/btnIcoAtras"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:background="@color/colorTransparente"
+            android:onClick="onClick"
+            android:src="@mipmap/ic_atras" />
+
+
+        <ImageButton
+            android:id="@+id/btnAyuda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorTransparente"
+            android:src="@mipmap/ic_ayuda" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajustes del Tema"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="5dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diseño de la App"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:id="@+id/comboModoTema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona el Color"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="5dp"/>
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"      >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutCardViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <!-- Fila 1 - Columna 1  -->
+
+            <android.support.v7.widget.GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                app:columnCount="3"
+                app:rowCount="6">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardAmarillo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="0"
+                    app:layout_column="0"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorAmarillo"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Amarillo"
+                        android:textColor="@android:color/white"/>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 1 - Columna 2 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardCeleste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="0"
+                    app:layout_column="1"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorCeleste"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Celeste"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 1 - Columna 3 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardRojo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="0"
+                    app:layout_column="2"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorRojo"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Rojo"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 2 - Columna 1 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardVerde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="1"
+                    app:layout_column="0"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="@color/colorVerde"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Verde"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 2 - Columna 2 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardNaranja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="1"
+                    app:layout_column="1"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorNaranja"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Naranja"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 2 - Columna 3 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardLila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="1"
+                    app:layout_column="2"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorLila"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Lila"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 3 - Columna 1 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardMarron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="2"
+                    app:layout_column="0"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorMarron"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Marron"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 3 - Columna 2 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardLima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="2"
+                    app:layout_column="1"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorLima"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Lima"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 3 - Columna 3 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardGranada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="2"
+                    app:layout_column="2"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorGranada"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Granada"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 4 - Columna 1 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardTurquesa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="3"
+                    app:layout_column="0"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorTurquesa"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Turquesa"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 4 - Columna 2 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardVinotinto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="3"
+                    app:layout_column="1"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorVinotinto"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Vinotinto"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 4 - Columna 3 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardFucsia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="3"
+                    app:layout_column="2"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorFucsia"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Fucsia"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 5 - Columna 1 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardAzulRey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="4"
+                    app:layout_column="0"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorAzulRey"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Azul Rey"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 5 - Columna 2 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardTeja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="4"
+                    app:layout_column="1"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorTeja"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Teja"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 5 - Columna 3 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardAbeto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="4"
+                    app:layout_column="2"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorVerdeAbeto"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Verde Abeto"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 6 - Columna 1 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardAzul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="5"
+                    app:layout_column="0"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorAzul"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Azul"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 6 - Columna 2 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardGris"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="5"
+                    app:layout_column="1"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorGris"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Gris"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Fila 6 - Columna 3 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardNegro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_row="5"
+                    app:layout_column="2"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/colorNegro"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Negro"
+                        android:textColor="@android:color/white"/>
+                </android.support.v7.widget.CardView>
+
+
+            </android.support.v7.widget.GridLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
